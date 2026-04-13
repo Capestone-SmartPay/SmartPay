@@ -1,0 +1,57 @@
+<!-- ===== PAGE: LAPORAN ===== -->
+<section class="page-content active" id="page-laporan">
+    <h2 class="page-title">Laporan Keuangan</h2>
+
+    <!-- Summary Cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="summary-card card-pemasukan">
+                <p class="summary-label">Total Pemasukan</p>
+                <h2 class="summary-amount" id="laporanPemasukan">Rp. 0</h2>
+                <p class="summary-period">Bulan ini</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="summary-card card-pengeluaran">
+                <p class="summary-label">Total Pengeluaran</p>
+                <h2 class="summary-amount" id="laporanPengeluaran">Rp. 0</h2>
+                <p class="summary-period">Bulan ini</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="summary-card card-saldo">
+                <p class="summary-label">Total Saldo</p>
+                <h2 class="summary-amount" id="laporanSelisih">Rp. 0</h2>
+                <p class="summary-period">Bulan ini</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Monthly Report Table -->
+    <div class="card form-card">
+        <div class="card-body p-4">
+            <h5 class="card-title mb-3 fw-bold">Laporan Keuangan Bulanan</h5>
+            <div class="table-responsive">
+                <table class="table table-hover" id="tabelLaporanBulanan">
+                    <thead>
+                        <tr>
+                            <th>Periode</th>
+                            <th>Pemasukan</th>
+                            <th>Pengeluaran</th>
+                            <th>Saldo</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listLaporanBulanan">
+                        <tr>
+                            <td colspan="5" class="text-center text-muted py-4">
+                                <i class="bi bi-inbox fs-1 d-block mb-2"></i>
+                                Belum ada data laporan
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

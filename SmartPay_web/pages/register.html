@@ -1,0 +1,37 @@
+<!-- ===== AUTH: REGISTER ===== -->
+<div class="auth-card">
+    <div class="auth-brand">
+        <h3 class="auth-brand-title">SmartPay</h3>
+        <p class="auth-brand-sub">Dompet Digital Pintar</p>
+    </div>
+    <h4 class="auth-heading">Daftar</h4>
+    <p class="auth-subheading">Buat akun baru untuk mulai menggunakan SmartPay</p>
+    <form id="formRegister">
+        <div class="mb-3">
+            <label for="regNama" class="form-label auth-label">Nama Lengkap</label>
+            <input type="text" class="form-control auth-input" id="regNama" required>
+        </div>
+        <div class="mb-3">
+            <label for="regEmail" class="form-label auth-label">Email</label>
+            <input type="email" class="form-control auth-input" id="regEmail" required>
+        </div>
+        <div class="mb-3">
+            <label for="regTelepon" class="form-label auth-label">Nomor Telefon</label>
+            <input type="tel" class="form-control auth-input" id="regTelepon">
+        </div>
+        <div class="mb-3">
+            <label for="regPassword" class="form-label auth-label">Password</label>
+            <input type="password" class="form-control auth-input" id="regPassword" placeholder="Minimal 8 Karakter" required minlength="8">
+        </div>
+        <div class="mb-3">
+            <label for="regPasswordConfirm" class="form-label auth-label">Konfirmasi Password</label>
+            <input type="password" class="form-control auth-input" id="regPasswordConfirm" placeholder="Ulangi Password" required>
+        </div>
+        <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+            <label class="form-check-label auth-check-label" for="agreeTerms">Saya setuju dengan <a href="#" class="auth-terms-link">syarat dan ketentuan</a> yang berlaku</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 auth-btn" id="btnRegister">Daftar</button>
+    </form>
+    <p class="auth-switch-text">Sudah punya akun? <a href="#" class="auth-switch-link" id="switchToLogin">Masuk di sini</a></p>
+</div>

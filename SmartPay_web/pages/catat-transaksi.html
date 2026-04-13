@@ -1,0 +1,71 @@
+<!-- ===== PAGE: CATAT TRANSAKSI ===== -->
+<section class="page-content active" id="page-catat-transaksi">
+    <h2 class="page-title">Catat Transaksi</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <div class="card form-card">
+                <div class="card-body p-4">
+                    <form id="formTransaksi">
+                        <div class="mb-3">
+                            <label for="judulTransaksi" class="form-label fw-semibold">Judul Transaksi</label>
+                            <input type="text" class="form-control" id="judulTransaksi" placeholder="Contoh: Belanja Bulanan" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jumlahTransaksi" class="form-label fw-semibold">Jumlah (Rp)</label>
+                            <input type="number" class="form-control" id="jumlahTransaksi" placeholder="10.000" required min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Tipe Transaksi</label>
+                            <div class="d-flex gap-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipeTransaksi" id="tipePemasukan" value="pemasukan" checked>
+                                    <label class="form-check-label text-success fw-semibold" for="tipePemasukan">Pemasukan</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipeTransaksi" id="tipePengeluaran" value="pengeluaran">
+                                    <label class="form-check-label text-danger fw-semibold" for="tipePengeluaran">Pengeluaran</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kategoriTransaksi" class="form-label fw-semibold">Kategori</label>
+                            <select class="form-select" id="kategoriTransaksi" required>
+                                <option value="">Pilih Kategori</option>
+                                <optgroup label="Pemasukan">
+                                    <option value="Gaji">Gaji</option>
+                                    <option value="Freelance">Freelance</option>
+                                    <option value="Investasi">Investasi</option>
+                                    <option value="Bonus">Bonus</option>
+                                    <option value="Hadiah">Hadiah</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </optgroup>
+                                <optgroup label="Pengeluaran">
+                                    <option value="Makanan">Makanan</option>
+                                    <option value="Transportasi">Transportasi</option>
+                                    <option value="Belanja">Belanja</option>
+                                    <option value="Tagihan">Tagihan</option>
+                                    <option value="Hiburan">Hiburan</option>
+                                    <option value="Kesehatan">Kesehatan</option>
+                                    <option value="Pendidikan">Pendidikan</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tanggalTransaksi" class="form-label fw-semibold">Tanggal</label>
+                            <input type="date" class="form-control" id="tanggalTransaksi" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="catatanTransaksi" class="form-label fw-semibold">Catatan (Opsional)</label>
+                            <textarea class="form-control" id="catatanTransaksi" rows="3" placeholder="Tambahkan catatan.."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-gradient w-100 btn-lg rounded-pill" id="btnSimpanTransaksi">
+                            + Simpan Transaksi
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
