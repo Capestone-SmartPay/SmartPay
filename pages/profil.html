@@ -1,0 +1,44 @@
+<!-- ===== PAGE: PROFIL ===== -->
+<section class="page-content active" id="page-profil">
+    <h2 class="page-title"><i class="bi bi-person-fill me-2"></i>Profil</h2>
+    <p class="text-muted mb-4">Kelola informasi akun Anda</p>
+
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card form-card text-center">
+                <div class="card-body p-4">
+                    <div class="profile-avatar-lg mx-auto mb-3">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4 class="fw-bold" id="profilNama">-</h4>
+                    <p class="text-muted" id="profilEmail">-</p>
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">Member Aktif</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card form-card">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-4">Edit Profil</h5>
+                    <form id="formProfil">
+                        <div class="mb-3">
+                            <label for="editNama" class="form-label fw-semibold">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="editNama" placeholder="Nama lengkap">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editEmail" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" id="editEmail" placeholder="email@contoh.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editTelepon" class="form-label fw-semibold">No. Telepon</label>
+                            <input type="tel" class="form-control" id="editTelepon" placeholder="08xxxxxxxxxx">
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill px-4" id="btnSimpanProfil">
+                            <i class="bi bi-check-circle me-2"></i>Simpan Perubahan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
