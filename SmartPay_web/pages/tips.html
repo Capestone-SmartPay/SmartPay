@@ -1,0 +1,156 @@
+<!-- ===== PAGE: TIPS KEUANGAN ===== -->
+<section class="page-content active" id="page-tips">
+    <h2 class="page-title">Tips Keuangan</h2>
+    <p class="text-muted mb-4">Panduan praktis mengatasi pengeluaran berlebihan dan mengatur keuangan dengan bijak</p>
+
+    <!-- Warning Card -->
+    <div class="tips-warning-card mb-4">
+        <h6 class="fw-bold mb-2"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Tanda-tanda Pengeluaran Lebih Lanjut:</h6>
+        <ul class="tips-warning-list mb-0">
+            <li>Pengeluaran bulanan melebihi pendapatan</li>
+            <li>Tidak memiliki tabungan atau dana darurat</li>
+            <li>Sering digunakan untuk kebutuhan sehari-hari</li>
+            <li>Saldo rekening selalu menipis di akhir bulan</li>
+        </ul>
+    </div>
+
+    <!-- 50/30/20 Calculator -->
+    <div class="card form-card mb-4">
+        <div class="card-body p-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="tips-calc-icon">
+                    <i class="bi bi-calculator-fill"></i>
+                </div>
+                <div>
+                    <h6 class="fw-bold mb-0">Kalkulator Aturan 50/30/20</h6>
+                    <small class="text-muted">Hitung alokasi ideal untuk penghasilan Anda</small>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Pendapatan Bulanan (Rp)</label>
+                <div class="d-flex gap-2">
+                    <input type="number" class="form-control" id="inputPendapatan" placeholder="Masukkan Pendapatan Bulanan Anda" min="1">
+                    <button class="btn btn-success rounded-pill px-4" id="btnHitungAlokasi">Semua</button>
+                </div>
+            </div>
+            <div id="hasilAlokasi" class="d-none">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="alokasi-card alokasi-kebutuhan">
+                            <h6 class="fw-bold">50% Kebutuhan</h6>
+                            <h4 class="fw-bold" id="alokasiKebutuhan">Rp 0</h4>
+                            <small>Kebutuhan pokok, tagihan, transportasi</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alokasi-card alokasi-keinginan">
+                            <h6 class="fw-bold">30% Keinginan</h6>
+                            <h4 class="fw-bold" id="alokasiKeinginan">Rp 0</h4>
+                            <small>Hiburan, belanja, makan di luar</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="alokasi-card alokasi-tabungan">
+                            <h6 class="fw-bold">20% Tabungan</h6>
+                            <h4 class="fw-bold" id="alokasiTabungan">Rp 0</h4>
+                            <small>Tabungan, investasi, dana darurat</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips List -->
+    <h5 class="fw-bold mb-3">8 Tips Praktis Mengatur Keuangan</h5>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">1</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Terapkan Aturan 50/30/20</h6>
+                        <p class="text-muted small mb-0">Alokasikan 50% untuk kebutuhan, 30% untuk keinginan, dan 20% untuk tabungan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">2</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Catat Setiap Pengeluaran</h6>
+                        <p class="text-muted small mb-0">Tracking semua pengeluaran membantu menemukan kebocoran anggaran.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">3</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Buat Dana Darurat</h6>
+                        <p class="text-muted small mb-0">Siapkan dana darurat minimal 3-6 bulan pengeluaran untuk situasi tak terduga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">4</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Hindari Utang Konsumtif</h6>
+                        <p class="text-muted small mb-0">Gunakan utang hanya untuk hal produktif yang bisa menghasilkan nilai lebih.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">5</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Mulai Investasi Sejak Dini</h6>
+                        <p class="text-muted small mb-0">Semakin cepat mulai, semakin besar potensi dari compound interest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">6</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Tetapkan Tujuan Keuangan</h6>
+                        <p class="text-muted small mb-0">Tujuan spesifik dan terukur membuat Anda lebih termotivasi menabung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">7</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Bandingkan Sebelum Membeli</h6>
+                        <p class="text-muted small mb-0">Selalu bandingkan harga dan pertimbangkan kebutuhan vs keinginan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card form-card tips-practical-card">
+                <div class="card-body p-3 d-flex gap-3">
+                    <div class="tips-num">8</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Review Keuangan Berkala</h6>
+                        <p class="text-muted small mb-0">Evaluasi keuangan setiap akhir bulan untuk perbaikan bulan berikutnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

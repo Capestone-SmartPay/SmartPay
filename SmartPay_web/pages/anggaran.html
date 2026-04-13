@@ -1,0 +1,43 @@
+<!-- ===== PAGE: ANGGARAN ===== -->
+<section class="page-content active" id="page-anggaran">
+    <h2 class="page-title">Anggaran Bulanan</h2>
+
+    <!-- Inline Add Form -->
+    <div class="card form-card mb-4">
+        <div class="card-body p-4">
+            <h6 class="fw-bold mb-3">Tambah Anggaran Baru</h6>
+            <form id="formAnggaran">
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-5">
+                        <select class="form-select" id="namaAnggaran" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="Makanan">Makanan</option>
+                            <option value="Transportasi">Transportasi</option>
+                            <option value="Belanja">Belanja</option>
+                            <option value="Tagihan">Tagihan</option>
+                            <option value="Hiburan">Hiburan</option>
+                            <option value="Kesehatan">Kesehatan</option>
+                            <option value="Pendidikan">Pendidikan</option>
+                            <option value="Tabungan">Tabungan</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" class="form-control" id="jumlahAnggaran" placeholder="Jumlah Anggaran (Rp)" required min="1">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary w-100 rounded-pill" id="btnSimpanAnggaran">Tambah</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Budget List -->
+    <div id="listAnggaran">
+        <div class="text-center text-muted py-4">
+            <i class="bi bi-wallet fs-1 d-block mb-2"></i>
+            Belum ada anggaran
+        </div>
+    </div>
+</section>
